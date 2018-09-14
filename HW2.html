@@ -1,0 +1,48 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>Assignments</title>
+</head>
+<body bgcolor="#FBFBFB">
+
+
+<h2><font color="navy">Assignment 2</font></h2>
+<h2><font color="gray">How Simple Is Your Net?</font></h2>
+
+<hr>
+
+Consider the following training set (gzipped) on 1000 dimensions:
+<a href="http://afsweb.clarkson.edu/class/cs241/train-a2-449.txt.gz">training set</a>.
+
+<p>
+
+Design a Boolean classifier (outputs +1/-1) which is fully accurate on the training set.
+This means that the total number of misclassifications that the classifier makes on the
+training set should be zero. Use a classifier that is a neural network with one output
+and some hidden units.
+
+</p><p>
+
+Then run your classifier on this testing set (gzipped): 
+<a href="http://afsweb.clarkson.edu/class/cs241/test-a2-449.txt.gz">testing set</a>.
+Report the number of misclassifications of your classifier on the testing set.
+
+
+</p><hr>
+
+<h3>What to submit</h3>
+
+Collect the Boolean predictions of your classifier on the testing set in a single text file
+(as a sequence of +1 and -1 separated by spaces in a single line). 
+Also store your net as a text file using the following format.
+The first line should be an integer that represents the number of hidden units.
+The second line should be the sequence of weights used by the output units.
+The subsequent lines should be the sequence of weights used by each hidden unit
+on the inputs (ordered in the same manner as the data). So, if you use M hidden units,
+this file should have M+2 lines. The last M+1 lines should have 1000 entries in them.
+
+Submit via email the two text files along with your source code for the homework.
+
+<hr>
+
+
+
+</body></html>
